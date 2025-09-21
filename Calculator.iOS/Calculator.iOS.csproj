@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <SupportedOSPlatformVersion>14.0</SupportedOSPlatformVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia.iOS"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Calculator\Calculator.csproj"/>
+    </ItemGroup>
+</Project>
