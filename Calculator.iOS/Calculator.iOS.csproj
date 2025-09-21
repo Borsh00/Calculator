@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-    <PropertyGroup>
-        <OutputType>WinExe</OutputType>
-        <TargetFramework>net8.0</TargetFramework>
-        <SupportedOSPlatformVersion>14.0</SupportedOSPlatformVersion>
-        <Nullable>enable</Nullable>
+    <PropertyGroup Condition="'$(TargetFramework)' == 'net9.0-ios15.0'">
+    <TargetFramework>net9.0-ios15.0</TargetFramework>
+    <SupportedOSPlatformVersion>13.0</SupportedOSPlatformVersion>
+    <TargetPlatformVersion>15.0</TargetPlatformVersion>
+    <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>  <!-- Для ARM iOS -->
     </PropertyGroup>
 
     <ItemGroup>
